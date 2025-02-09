@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Pinned Tabs Manager",
+  "version": "1.0",
+  "description": "Smart tab management for better productivity",
+  "permissions": [
+    "tabs",
+    "storage",
+    "favicon",
+    "clipboardRead",
+    "bookmarks",
+    "tabGroups"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icons/icon48.png"
+  },
+  "options_page": "options.html",
+  "commands": {
+    "quick-pin": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P"
+      },
+      "description": "Quick pin current tab"
+    }
+  }
+}

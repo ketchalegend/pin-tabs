@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinned Tabs Manager</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-4 bg-gray-100">
+    <h1 class="text-2xl font-bold mb-4">Pinned Tabs Manager</h1>
+
+    <!-- Input Field -->
+    <div class="mb-4">
+        <input type="text" id="tabUrl" placeholder="Enter URL to pin"
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button id="addButton" class="w-full mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Add
+            Tab</button>
+    </div>
+
+    <!-- Pinned Tabs List -->
+    <ul id="pinnedList" class="list-none p-0 space-y-2">
+        <!-- Dynamically generated list items will go here -->
+    </ul>
+
+    <!-- Clear All Button -->
+    <button id="clearAllButton" class="w-full mt-4 px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600">Clear
+        All</button>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
