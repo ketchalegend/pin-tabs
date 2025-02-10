@@ -2,9 +2,10 @@
 
 A powerful Chrome extension for managing pinned tabs with advanced features for productivity and organization.
 
-## Features
 
 ![Main Interface](screenshots/main.png)
+
+## Features
 
 ### Core Functionality
 - 📌 Pin/unpin tabs with one click
@@ -35,14 +36,6 @@ A powerful Chrome extension for managing pinned tabs with advanced features for 
 - ⌨️ Keyboard shortcuts support
 - 🔔 Visual feedback for actions
 - 📊 Statistical dashboard
-
-## Screenshots
-
-![Main Interface](screenshots/main.png)
-![Tag Management](screenshots/tags.png)
-![Statistics Dashboard](screenshots/stats.png)
-
-(Add actual screenshots before release)
 
 ## Installation
 
