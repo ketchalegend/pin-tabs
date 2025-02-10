@@ -103,15 +103,6 @@ Coming soon! The extension will be available on the Chrome Web Store.
 
 ## Development
 
-### Project Structure
-
-├── manifest.json     # Extension configuration
-├── options.html      # Main interface
-├── options.js        # Core functionality
-├── background.js     # Background processes
-├── styles.css        # Styling
-└── icons/           # Extension icons
-
 ### Technical Features
 - Chrome Storage API for persistence
 - Tab management API integration
