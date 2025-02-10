@@ -4,19 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Tab Pin Manager</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <meta name="color-scheme" content="dark light">
 </head>
 
 <body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+        <span class="theme-label">
+            <span class="material-icons-round">dark_mode</span>
+        </span>
+    </div>
+
     <div class="container">
         <div class="header">
-            <h1>Tab Pin Manager</h1>
-            <p>Smart tab management for better productivity</p>
+            <h1 style="color: #1f2937;"><span class="material-icons-round" style="color: #1f2937;">tab</span> Tab Pin Manager</h1>
+            <p style="color: #1f2937;"><span class="material-icons-round" style="color: #1f2937;">tips_and_updates</span> Smart tab
+                management for better
+                productivity
+            </p>
         </div>
 
         <!-- Stats Section -->
         <div class="card stats-section">
-            <h2>Overview</h2>
+            <h2><span class="material-icons-round">analytics</span> Overview</h2>
             <div class="stats-container">
                 <!-- Stats will be inserted here by JavaScript -->
             </div>
@@ -26,35 +41,46 @@
         <div class="card">
             <div class="quick-actions">
                 <button id="pinCurrentTab" class="btn btn-primary">
+                    <span class="material-icons-round">push_pin</span>
                     Pin Current Tab
                 </button>
-                <button id="pinAllTabs" class="btn btn-secondary">Pin All Visible</button>
-                <button id="unpinAllTabs" class="btn btn-danger">Unpin All</button>
+                <button id="pinAllTabs" class="btn btn-secondary">
+                    <span class="material-icons-round">push_pin</span>
+                    Pin All Visible
+                </button>
+                <button id="unpinAllTabs" class="btn btn-danger">
+                    <span class="material-icons-round">clear_all</span>
+                    Unpin All
+                </button>
             </div>
         </div>
 
         <!-- Add New Tab -->
         <div class="card">
-            <h2>Add New Pinned Tab</h2>
+            <h2><span class="material-icons-round">add_circle</span> Add New Pinned Tab</h2>
             <div class="form-group">
                 <div class="input-group">
-                    <label>URL</label>
                     <div class="url-input-wrapper">
-                        <input type="text" id="tabUrl" placeholder="Enter URL or paste from clipboard">
-                        <button id="pasteUrl" class="btn btn-icon">
-                            📋
+                        <span class="material-icons-round input-icon">link</span>
+                        <input type="text" id="tabUrl" placeholder="Enter URL or paste from clipboard" class="modern-input">
+                        <button id="pasteUrl" class="btn btn-icon" title="Paste from Clipboard">
+                            <span class="material-icons-round">content_paste</span>
                         </button>
                     </div>
                 </div>
-                <button id="addButton" class="btn btn-primary">Add & Pin Tab</button>
+                <button id="addButton" class="btn btn-primary">
+                    <span class="material-icons-round">add</span>
+                    Add & Pin Tab
+                </button>
             </div>
         </div>
 
         <!-- Pinned Tabs List -->
         <div class="card">
             <div class="list-header">
-                <h2>Your Pinned Tabs</h2>
+                <h2><span class="material-icons-round">list</span> Your Pinned Tabs</h2>
                 <div class="search-wrapper">
+                    <span class="material-icons-round search-icon">search</span>
                     <input type="text" id="searchTabs" placeholder="Search tabs..." class="search-input">
                 </div>
             </div>
@@ -64,15 +90,24 @@
             </ul>
 
             <div class="card-footer">
-                <button id="exportBtn" class="btn btn-success">Export Tabs</button>
-                <button id="importBtn" class="btn btn-secondary">Import Tabs</button>
+                <button id="exportBtn" class="btn btn-success">
+                    <span class="material-icons-round">download</span>
+                    Export Tabs
+                </button>
+                <button id="importBtn" class="btn btn-secondary">
+                    <span class="material-icons-round">upload</span>
+                    Import Tabs
+                </button>
             </div>
         </div>
     </div>
+
     <footer class="footer">
-        <p class="credit">Made with ❤️ by ketchalegend</p>
-        <p class="location">Cologne, Germany</p>
+        <p class="credit">Made with <span class="material-icons-round heart">favorite</span> by ketchalegend</p>
+        <p class="location"><span class="material-icons-round">location_on</span> Cologne, Germany</p>
+        <p class="version"><span class="material-icons-round">info</span> Version 1.4</p>
     </footer>
+
     <script src="options.js"></script>
 </body>
 
