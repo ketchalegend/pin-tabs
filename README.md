@@ -5,8 +5,6 @@ A powerful Chrome extension for managing pinned tabs with advanced features for 
 ## Features
 
 ![Main Interface](screenshots/main.png)
-![Add Tab](screenshots/pin.png)
-
 
 ### Core Functionality
 - 📌 Pin/unpin tabs with one click
